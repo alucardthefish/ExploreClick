@@ -1,13 +1,17 @@
 from setuptools import setup
 
 setup(
-    name='cli_tools',
-    version='1.0',
-    py_modules=['greeter'],
+    name="cli_tools",
+    version="1.0",
+    py_modules=["greeter"],
     install_requires=[
-        'Click',
+        "Click",
     ],
     entry_points={
-        'console_scripts': 'greetings=greeter:greet'
+        "console_scripts": [
+            "greetings=greeter:greet",
+            "add=calculator:add",
+            "sub=calculator:subtract",
+        ]
     }
 )
