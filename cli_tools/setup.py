@@ -14,6 +14,8 @@ setup(
             "sub=calculator:subtract",
             "authenticate=authenticate:auth",
             "login=authenticate:login",
+            "note=fileutils:note",
+            "concat=fileutils:concat",
         ]
     }
 )
