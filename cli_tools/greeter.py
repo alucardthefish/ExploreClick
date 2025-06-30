@@ -12,7 +12,14 @@ import click
     default="en",
     type=click.Choice(["en", "es"]),
 )
-def greet(first_name, last_name, lang):
+@click.option(
+    "--say-it",
+    type=int,
+    default=1,
+    help="Number of times to say greeting",
+)
+def greet(first_name, last_name, lang, say_it):
     """Displays a greeting to the user."""
     greetings = "Hello" if lang == "en" else "Hola"
-    click.echo(f'{greetings} {first_name} {last_name}!')
+    for _ in range(say_it):
+        click.echo(f'{greetings} {first_name} {last_name}!')
