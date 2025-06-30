@@ -12,6 +12,8 @@ setup(
             "greetings=greeter:greet",
             "add=calculator:add",
             "sub=calculator:subtract",
+            "authenticate=authenticate:auth",
+            "login=authenticate:login",
         ]
     }
 )
