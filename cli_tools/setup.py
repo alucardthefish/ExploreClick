@@ -16,6 +16,7 @@ setup(
             "login=authenticate:login",
             "note=fileutils:note",
             "concat=fileutils:concat",
+            "notes=notes:main",
         ]
     }
 )
