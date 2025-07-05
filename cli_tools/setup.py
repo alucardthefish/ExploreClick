@@ -6,6 +6,7 @@ setup(
     py_modules=["greeter"],
     install_requires=[
         "Click",
+        "requests",
     ],
     entry_points={
         "console_scripts": [
@@ -17,6 +18,7 @@ setup(
             "note=fileutils:note",
             "concat=fileutils:concat",
             "notes=notes:main",
+            "download=fileutils:download",
         ]
     }
 )
