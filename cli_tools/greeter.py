@@ -22,4 +22,4 @@ def greet(first_name, last_name, lang, say_it):
     """Displays a greeting to the user."""
     greetings = "Hello" if lang == "en" else "Hola"
     for _ in range(say_it):
-        click.echo(f'{greetings} {first_name} {last_name}!')
+        click.secho(f'{greetings} {first_name} {last_name}!', fg="red", bg="white")
